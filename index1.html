@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Flow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .flow-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .flow-step {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+        .flow-step:hover {
+            transform: scale(1.05);
+        }
+        .arrow {
+            font-size: 30px;
+            color: #007bff;
+        }
+        .flow-container span {
+            font-weight: bold;
+            color: #333;
+        }
+        .dev, .build, .test, .deploy, .monitor {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .dev {
+            background-color: #4CAF50;
+        }
+        .build {
+            background-color: #2196F3;
+        }
+        .test {
+            background-color: #FF9800;
+        }
+        .deploy {
+            background-color: #9C27B0;
+        }
+        .monitor {
+            background-color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+
+<div class="flow-container">
+    <div class="flow-step dev">
+        <span>Development</span>
+    </div>
+    <div class="arrow">↓</div>
+
+    <div class="flow-step build">
+        <span>Build</span>
+    </div>
+    <div class="arrow">↓</div>
+
+    <div class="flow-step test">
+        <span>Testing</span>
+    </div>
+    <div class="arrow">↓</div>
+
+    <div class="flow-step deploy">
+        <span>Deployment</span>
+    </div>
+    <div class="arrow">↓</div>
+
+    <div class="flow-step monitor">
+        <span>Monitoring</span>
+    </div>
+</div>
+
+</body>
+</html>
